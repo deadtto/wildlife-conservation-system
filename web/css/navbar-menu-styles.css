@@ -1,0 +1,145 @@
+.navbar{
+	width: 1200px;
+	height:75px;
+	margin:auto;
+}
+
+.icon{
+	width:200px;
+	float: left;
+	height: 70px;
+}
+
+.logo{
+	color:white;
+	font-size: 35px;
+	font-family: Arial;
+	padding-left: 20px;
+	float: left;
+	padding-top:20px;
+}
+
+.menu{
+	width:400px;
+	float:right;
+	margin-right: 190px;
+	height:70px;
+	display: flex;
+	align-items: center;
+}
+
+ul{
+	float:left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul li{
+	list-style: none;
+	margin-left: 62px;
+	margin-top: 27px;
+	font-size: 14px;
+}
+
+ul li a{
+	text-decoration: none;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+	transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+	color: green;
+}
+
+/* Dropdown Menu Styles */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    position: relative;
+
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+.menu ul li a:hover {
+    color: green;
+}
+
+/* Dropdown specific styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the parent menu item */
+    left: 0;
+    list-style: none;
+    min-width: 150px;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+}
+
+.dropdown-menu li a:hover {
+    color: white;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: none;
+}
+
+/* Dropdown specific styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the parent menu item */
+    left: 0;
+    list-style: none;
+    min-width: 150px;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+}
+
+.dropdown-menu li a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

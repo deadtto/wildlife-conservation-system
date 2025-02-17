@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-family: Raleway, sans-serif;
+}
+
+html, body {
+    height: 100%; /* Ensure full height for the page */
+    margin: 0;    /* Remove default margin */
+	padding: 0;
+}
+
+body {
+	background-size: cover;
+}
+
+.profile {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url(../img/slide5.jpg);
+    background-size: cover;
+    background-position: center center; /* Ensure the background is centered */
+    background-attachment: scroll; /* Makes the background scroll with the content */
+    height: auto; /* Adjust the height to be dynamic and based on the content */
+    min-height: 100vh; /* Ensure it takes up at least the full viewport height */
+}
+
+
+.user-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 60vh; /* Ensure the container takes full viewport height */
+}
+ 
+ .user-container .title{
+	font-size: 3.5rem;
+	color:white;
+	margin-bottom: 18px;
+	text-transform: uppercase;
+	text-align: center;
+ }
+
+
+
+.profile-container {
+    display: flex;
+    background-color: #fff;
+    padding: 30px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center; /* Align items inside the profile container */
+}
+
+
+
+.profile-image {
+    position: relative;
+    margin-right: 20px;
+}
+.profile-image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.profile-details p {
+    margin: 5px 0;
+}
+.profile-details p span {
+    font-weight: bold;
+}
+.profile-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.profile-actions .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    color: #666;
+    font-size: 14px;
+}
+.profile-actions .action i {
+    margin-right: 10px;
+}
+.edit-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    color: #007bff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.edit-profile:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+/* Adopted Animals Section */
+
+.title {
+    font-size: 3.5rem;
+    color: white;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Container for Adopted Animal Cards */
+.adopted-cards {
+    display: flex;
+    gap: 50px; /* Reduce space between cards */
+    justify-content: center; /* Center the grid items */
+    padding: 20px; /* Add padding around the grid */
+}
+
+/* Individual Adopted Animal Card */
+.adopted-cards .card {
+    padding: 15px; /* Adjust padding */
+    width: 100%; /* Take full width of grid column */
+    max-width: 480px; /* Keep cards compact */
+    height: auto; /* Let height adjust dynamically */
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center content inside */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items inside */
+    justify-content: space-between; /* Balance content */
+    margin: auto; /* Ensure uniform alignment */
+}
+
+/* Title Inside Each Card */
+.adopted-cards .card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #2a9d8f;
+}
+
+/* Text Inside Each Card */
+.adopted-cards .card p {
+    font-size: 0.9rem;
+    margin: 3px 0;
+    color: #555;
+}
+
+/* Animal Image Styling */
+.animal-image {
+    width: 100px; /* Ensure images are not too large */
+    height: 100px; /* Maintain a square aspect ratio */
+    object-fit: cover; /* Ensure proper cropping */
+    border-radius: 50%; /* Make it circular */
+    margin: 10px 0; /* Space between image and text */
+}
+
+/* Ensure All Cards Align Well on Different Screens */
+@media (max-width: 768px) {
+    .adopted-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for smaller screens */
+        gap: 5px;
+    }
+
+    .adopted-cards .card {
+        max-width: 90%; /* Use more space on smaller screens */
+    }
+}
+
+/* Animal Image Adjustments */
+.animal-image {
+    width: 100%;
+    height: auto;
+    max-width: 120px; /* Reduce image size to fit the smaller card */
+    border-radius: 5px;
+    margin-top: 10px;
+}

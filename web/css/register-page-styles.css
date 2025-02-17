@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%), url('../img/tiger.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.form-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-box.active {
+    opacity: 1;
+}
+
+.staff-container {
+    position: absolute;
+   left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.register a {
+    color: rgb(225, 208, 82);
+}
+
+.visitor-container a {
+    color: rgb(225, 208, 82);
+}
+
+.visitor-container {
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.ontop {
+    color:white;
+    text-align: center;
+}
+
+.register{
+    color:white;
+    text-align: center;
+}
+
+.top header {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.two-forms {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-box {
+    position: relative;
+}
+
+.input-field {
+    font-size: 15px;
+    background: rgba(0, 0, 0, 0.219);
+    color: white;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+
+.input-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.submit, #returnButtonvisitor {
+    width: 140px;
+    height: 40px;
+    font-weight: bold;
+    background: rgb(246, 238, 197);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+    color: black;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.submit:hover, #returnButtonvisitor:hover {
+    background: rgb(112, 78, 37);
+    color: white;
+}
+
+
+.input-box.flex {
+    gap: 10px;
+}
+
+.error-message {
+    background-color: #ffcccc; /* Light red background */
+    color: #d8000c; /* Dark red text */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px; /* Space between error and form */
+    border: 1px solid #d8000c;
+}
